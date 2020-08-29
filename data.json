@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Sajjan Karn",
+        "age": 15,
+        "profession": "Programmer"
+    },
+    {
+        "name": "John Doe",
+        "age": 25,
+        "profession": "Web developer"
+    },
+    {
+        "name": "John Smith",
+        "age": 26,
+        "profession": "Front End Developer"
+    },
+    {
+        "name": "Yihua",
+        "age": 32,
+        "profession": "React Developer"
+    },
+    {
+        "name": "Andrei Neagoie",
+        "age": 29,
+        "profession": "Instructor"
+    },
+    {
+        "name": "Tom Cruise",
+        "age": 45,
+        "profession": "Actor"
+    },
+    {
+        "name": "Richard Hendricks",
+        "age": 28,
+        "profession": "Coder"
+    },
+    {
+        "name": "Gilfoyle",
+        "age": 32,
+        "profession": "Network Engineer"
+    }
+]

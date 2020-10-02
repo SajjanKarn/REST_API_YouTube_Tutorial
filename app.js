@@ -11,13 +11,16 @@ mongoose.connect("mongodb://localhost/restapi_tutorial", {
     console.log("connection to mongodb was successful!")
 })
 
+
 // middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+
 // routes
 app.use(require('./routes/index'))
 app.use(require("./routes/user"))
+
 
 // server configurations
 app.listen(3000, () => {

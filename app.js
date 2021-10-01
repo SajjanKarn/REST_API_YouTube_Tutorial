@@ -7,22 +7,15 @@ const app = express();
 mongoose.connect("mongodb://localhost/restapi_tutorial", {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}, () => {
-    console.log("connection to mongodb was successful!")
-})
+}).then(() => console.log("connection to db initialized...")).catch(err => console.log(err));
 
 
 // middlewares
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
+require("./startup/middleware")(app);
 
 // routes
-app.use(require('./routes/index'))
-app.use(require("./routes/user"))
+require("./startup/route")(app);
 
-
-// server configurations
-app.listen(3000, () => {
-  console.log("server started listening on port: 3000");
-});
+// server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log("server started listening on port: 3000"));
